@@ -1,39 +1,74 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>About me</title>
-	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+	<title>Sample</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="./bs/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="./bs/css/bootstrap.min.css">
+	<script type="text/javascript" src="./bs/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+    $(function () {
+        $("[rel='tooltip']").tooltip();
+    });
+</script>
+
 </head>
 <body>
-
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">About me</a>
-        </div>
-        <div class="collapse navbar-collapse">
+<div class="navbar-collapse collapse" id="navbar-main">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
+
+            <li>
+              <a href="" >Personal Details</a>
+            </li>
+            <li  class="disabled">
+              <a href="">Projects</a>
+            </li>
           </ul>
+
+
         </div>
+<div style="height: 100%;">
+<div class="container" >
+
+      <div class="page-header" id="banner">
+        <div class="row">
+          <div class="col-lg-6">
+            <h1>Varun Appaswami</h1>
+            <p class="lead">Contains all about me</p>
+          </div>
       </div>
     </div>
+</div>
+</div>
 
 
 
 
-    <div class="container">
-<div class="jumbotron" style="margin-top:10px;margin-left=5px;">
-	Hello, and I welcome you to know more about myself. I will be updating this, so stay tuned
-</div></div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
-    </script>
-    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-</body></html>
+
+<ul class="nav nav-tabs" style="margin-bottom: 15px;">
+  <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+  <li class=""><a href="#profile" data-toggle="tab">Contact Info</a></li>
+</ul>
+
+<div id="myTabContent" class="tab-content">
+  <div class="tab-pane fade active in" id="home">
+    <p>
+    	I am Varun Appaswami, studying Computer Science and Engineering at <a href="#" rel="tooltip" title="Madras Institute of Technology">MIT</a>
+    </p>
+  </div>
+  <div class="tab-pane fade" id="profile">
+    <p>Mail to varunappaswami@gmail.com</p>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>
