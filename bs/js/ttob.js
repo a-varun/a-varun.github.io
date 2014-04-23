@@ -84,7 +84,7 @@ function btot(){
 		if(mrm<0) flag=1;
 	}
 	if(flag==1 || mrm != 0){
-		document.getElementById('txt').value="Error !!!";
+		document.getElementById('txt').value="Syntax Error !!!";
 		return;		
 	}
 
@@ -92,13 +92,14 @@ function btot(){
 	var spos=1
 	flag=0;
 	for(var i=0;i<p.length;i++){
-		if(p[i]==',' && inputpos>=q.length){
-			flag=1;
-			break;
+		//alert(p[i]);
+		if(p[i]==',' && inputpos>=input.length){
+			document.getElementById('txt').value="Error!!! Istream has less data values!!!";
+			return;
 		}
 		if(p[i]=='<' && pos==0){
-			flag=1;
-			break;
+			document.getElementById('txt').value="Segmentation Fault";
+			return;
 		}
 		if(p[i]=='['){
 			stack[spos]=i+1;
@@ -136,9 +137,13 @@ function btot(){
 			out+=String.fromCharCode(memory[pos]);
 			continue;
 		}
+		//alert(p[i]);
 		if(p[i]==','){
+			//alert("in");
 			memory[pos]=input.charCodeAt(inputpos);
+			//alert(memory[pos]);
 			inputpos+=1;
+
 		}
 	}
 	if(flag!=0){
