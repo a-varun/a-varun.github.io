@@ -7,6 +7,12 @@
 	<link rel="stylesheet" type="text/css" href="./bs/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="./bs/css/bootstrap.min.css">
 	<script type="text/javascript" src="./bs/js/bootstrap.min.js"></script>
+        		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="bs/css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="bs/css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="bs/css/component2.css" />
+		<script src="bs/js/modernizr-2.6.2.min.js"></script>
+
 	<script type="text/javascript">
     $(function () {
         $("[rel='tooltip']").tooltip();
@@ -17,11 +23,25 @@
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
   ga('create', 'UA-50291092-1', 'a-varun.github.io');
   ga('send', 'pageview');
-
 </script>
+<style type="text/css">
+    
+			.circle {
+			    display: block;
+			    width: 250px;
+			    height: 250px;
+			    margin: 1em auto;
+			    background-size: cover;
+			    background-repeat: no-repeat;
+			    background-position: center center;
+			    border-radius: 99em;
+			    border: 5px solid #EEE;
+			    box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.3);
+			}
+		
+</style>
 </head>
 <body>
 
@@ -54,46 +74,176 @@
     </div>
 
 
-
+    <br><br>
 <div style="height: 100%;">
 <div class="container" >
 
       <div class="page-header" id="banner">
-        <div class="row">
-          <div class="col-lg-6">
-            <h1>Varun Appaswami</h1>
+              <div class="row">
+                  <div class="col-md-4">
+                       <br>
+            <p class="lead">Varun Appaswami</p>          
             <p class="lead">Contains all about me</p>
-          </div>
-      </div>
+                  </div>
+                  <div class="col-md-4">
+            <div class="circle" style="background-image:url('bs/varun.jpg')">
+							                    </div>
+                  </div>
+              </div>
+            
     </div>
 </div>
 </div>
 
-
-
-
-
-<ul class="nav nav-tabs" style="margin-bottom: 15px;">
-  <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
-  <li class=""><a href="#profile" data-toggle="tab">Contact Info</a></li>
-</ul>
-
-<div id="myTabContent" class="tab-content">
-  <div class="tab-pane fade active in" id="home">
-    <p>
-    	I am Varun Appaswami, studying Computer Science and Engineering at <a href="#" rel="tooltip" title="Madras Institute of Technology">MIT</a>
-    </p>
-    <p>
-      Will be updated soon
-    </p>
+				<button class="cn-button" id="cn-button">Menu</button>
+                                
+				<div class="cn-wrapper" id="cn-wrapper">
+					<ul>
+                                            
+						<li><a href="#" data-toggle="modal" data-target=".bs-example-modal-lg"><span style="font-size:9px">About Me</span></a></li>
+                                                <li><a href="#" data-toggle="modal" data-target=".bs-work-modal-lg"><span style="font-size:9px">WorkDone</span></a></li>
+						<li><a href="#" data-toggle="modal" data-target=".bs-projects-modal-lg"><span style="font-size:9px">Projects</span></a></li>
+            <li><a href="#" data-toggle="modal" data-target=".bs-achiv-modal-lg"><span style="font-size:9px">Achievements</span></a></li>
+            <li><a href="#" data-toggle="modal" data-target=".bs-online-modal-lg"><span style="font-size:9px">Coding<br>presence</span></a></li>
+						<li><a href="#" data-toggle="modal" data-target=".bs-contact-modal-lg"><span style="font-size:9px">Contact Me</span></a></li>
+            <li><a href="#" data-toggle="modal" data-target=".bs-social-modal-lg"><span style="font-size:9px">Social<br>presence</span></a></li>
+					 </ul>
+				</div>
+				<!-- End of Nav Structure -->
+                                <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+        <center>
+            I am Varun Appaswami, a Passionate Coder and a Gamer<br>
+            I will be finishing my final year of college by May, 2016<br>
+            You can find me by my alias, varun_a in most of the competitive programming sites.<br>
+            I read books a lot, and binge watch movie series.
+            
+        </center>
+    </div>
   </div>
-  <div class="tab-pane fade" id="profile">
-    <p>Mail to varunappaswami@gmail.com</p>
-    <p> Will be updated soon </p>
-  </div>
+                                    
+</div>
+                                
+                                <div class="modal fade bs-work-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+        <center>
+            <h2>Microsoft : May-July, 2015</h2><br>
+            Was an <b>SDE Intern</b> in the Bing team<br>
+            Worked on the Bing autosuggest feature for Indic languages<br>
+            <hr>
+            <h2>Amazon.com : May-July, 2014</h2><br>
+            Was an <b>SDE Intern</b> in the LLP team of kindle<br>
+            Created a memory tracer tool for kindle devices, which is used to detect the location of memory allocations<br>
+            <hr>
 
+            <h2>Inautix Inc. : Dec 2013 - Feb 2014</h2><br>
+            Was the member of a home automation project done with raspberry pi and took care<br>
+            of the backend work. Used python for communication and serving frontend.
+        </center>
+    </div>
+  </div>
+                                    
+</div>
+<div class="modal fade bs-projects-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+<div class="list-group">
+  <a href="#" class="list-group-item">
+    <h4 class="list-group-item-heading">Plagiarism Checker</h4>
+    <p class="list-group-item-text">An online service where the degree of plagiarism between two codes is checked.Both the assembly and the source comparison is checked. This app is hosted in openshift cloud server, with a django backend. Language: Python ( Django framework )</p>
+  </a>
+  <a href="#" class="list-group-item">
+    <h4 class="list-group-item-heading">Coding Calendar</h4>
+    <p class="list-group-item-text">A html5 app built during the Microsoft's Code.Fun.Do hackathon.Uses azure server as backend which scrapes data from various coding sites and gives a json blob to the app which uses the data to notify the users if any contest is going to happen soon, via the mobile app.Language: Python, JavaScript, HTML</p>
+  </a>
+  
+  <a href="#" class="list-group-item">
+    <h4 class="list-group-item-heading">2048 Clone</h4>
+    <p class="list-group-item-text">A clone of the popular game, 2048. In this, a computer plays a move after the user,
+      with its aim to get to Game Over quickly. you can play it over at a-varun.github.io/2048_2pl 
+    </p>
+  </a>
+  <a href="#" class="list-group-item">
+    <h4 class="list-group-item-heading">VCode</h4>
+    <p class="list-group-item-text">An online platform connecting the interviewer and the interviewee, used for online coding rounds. The interviewer will also have the option to test the code being typed by the interviewee against testcases. Used the Hackerrank api for code testing. 
+    </p>
+  </a>
+  
+      </div>
+  </div>
+                                    
+</div>
 </div>
 
+<div class="modal fade bs-achiv-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+<div class="list-group">
+  <a href="#" class="list-group-item">
+    <p class="list-group-item-text">Represented Madras Institute of Technology, Anna University in the ACM ICPC,Asia, Amrithapuri regional contest.</p>
+  </a>
+  <a href="#" class="list-group-item">
+      <p class="list-group-item-text">Won 10+ technical events in many inter, intra college symposiums, including the OSPC organized by Aricent, in many prestigious institutions like IIT Madras, CEG, MIT Anna University, etc.</p>
+  </a>
+  <a href="#" class="list-group-item">
+      <p class="list-group-item-text">Active participant in the online programming contests conducted by Topcoder, Codeforces, Hackerrank, Codechef</p>
+  </a>
+  <a href="#" class="list-group-item">
+      <p class="list-group-item-text">As a volunteer, organized and conducted many classes regarding competitive programming.</p>
+  </a>
+  <a href="#" class="list-group-item">
+      <p class="list-group-item-text">Helped organize Prayatna, the technical symposium of the department.</p>
+  </a>
+  
+      </div>
+  </div>
+                                    
+</div>
+</div>
+
+<div class="modal fade bs-contact-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+<div class="list-group">
+        Phone Number: 91-9003182573 <br>
+        Email Id: varunappaswami@gmail.com  
+      </div>
+  </div>
+</div>
+</div>
+
+
+<div class="modal fade bs-online-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+<div class="list-group">
+      <a href="https://www.topcoder.com/users/varun_a/"> TOPCODER </a> <br>
+      <a href="http://codeforces.com/profile/varun_a"> CODEFORCES </a> <br>
+      <a href="https://www.codechef.com/users/appaswamivarun"> CODECHEF </a> <br> 
+
+      </div>
+  </div>
+                                    
+</div>
+</div>
+
+<div class="modal fade bs-social-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+<div class="list-group">
+      <a href="https://fb.com/appaswamivarun"> FACEBOOK </a> <br>
+      <a href="http://www.quora.com/Varun-Appaswami"> QUORA </a> <br>
+      <a href="https://google.com/+VarunAppaswami"> Google Plus </a> <br> 
+
+      </div>
+  </div>
+                                    
+</div>
+</div>
+		<script src="bs/js/polyfills.js"></script>
+		<script src="bs/js/demo2.js"></script>
 
 
 </body>
