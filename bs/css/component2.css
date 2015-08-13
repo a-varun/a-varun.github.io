@@ -13,7 +13,7 @@ body {
 }
 
 body {
-	background: #222222;
+	background: #343434;
 	color: #fff;
 }
 
@@ -41,7 +41,7 @@ body {
 
 .cn-button {
 	position: absolute;
-	top: 81%;
+	top: 90%;
 	left: 50%;
 	z-index: 11;
 	margin-top: -2.25em;
@@ -64,7 +64,7 @@ body {
 
 .csstransforms .cn-wrapper {
 	position: absolute;
-	top: 79%;
+	top: 100%;
 	left: 50%;
 	z-index: 10;
 	margin-top: -13em;
